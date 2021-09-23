@@ -25,6 +25,8 @@ const Create = (props) => {
 
 const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(props.token, "props.token")
+    console.log(sessionToken, "sessionToken")
     fetch(`${APIURL}/character/create`, {
     method: "POST",
     body: JSON.stringify({
