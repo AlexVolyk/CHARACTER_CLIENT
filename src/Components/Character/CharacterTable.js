@@ -85,10 +85,11 @@ const CharacterTable = (props, character) => {
             <th>Edit or Delete</th>
           </tr>
         </thead>
-        //! right here we call function characterMapper() what include map() method
         <tbody>{characterMapper()}</tbody>
       </Table>
+      
     </>
+            //! right here we call function characterMapper() what include map() method
   );
 };
 
