@@ -28,7 +28,7 @@ const Signup = (props) => {
     let handleSumbit = (e) => {
         // console.log(props, '++++++++++++++++++++')
         e.preventDefault();
-        console.log(APIURL)
+        console.log(APIURL, "APIURL")
         fetch(`${APIURL}/user/register`, {
             method: 'POST',
             body: JSON.stringify({
