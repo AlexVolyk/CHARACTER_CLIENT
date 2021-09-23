@@ -22,7 +22,7 @@ const Create = (props) => {
     const [wisdom, setWisdom] = useState('');
     const [charisma, setCharisma] = useState('');
 
-
+        // ! here we can also use {prop.token} but I used here {sessionToken}, because I use in this file Context 
 const handleSubmit = (e) => {
     e.preventDefault();
     console.log(props.token, "props.token")
@@ -49,7 +49,7 @@ const handleSubmit = (e) => {
     headers: new Headers({
         "Content-Type": "application/json",
         "Authorization": `SECRET ${props.token}`,
-        // ! here we can also use {prop.token} but I used here {sessionToken}, because I use in this file Context 
+
     }),
     })
     .then((res) => res.json())
