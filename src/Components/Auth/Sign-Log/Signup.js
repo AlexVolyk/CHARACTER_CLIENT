@@ -45,10 +45,16 @@ const Signup = (props) => {
         .then(res => res.json())
         .then((data) => {
             console.log(data, 'data')
-            updateName(data.user.username)
+            // updateName(data.user.username)
             // ! updateToken we get with using Context.Provider from App.js file 
             // ! in this place we throw our sessionToken to the function updateToken
-            updateToken(data.sessionToken)
+            if (data.sessionToken !== undefined) {
+                updateName(data.user.username)
+
+                updateToken(data.sessionToken)
+
+            }
+            // updateToken(data.sessionToken)
             // console.log(data)
             // console.log(data.sessionToken, '++++++++++++++++')
             // ! if from fetch we will not get sessionToken we will get this message in placeholder("This email address is already used")
