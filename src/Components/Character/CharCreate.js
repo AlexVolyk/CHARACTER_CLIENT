@@ -74,7 +74,7 @@ const handleSubmit = (e) => {
 // !!!!!!!!!!!!!!!!!!!!!!! SOME RANDOM START !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     const randomPropertiesFetch = (e) =>{
-        fetch( 'http://localhost:3000/character/create' )
+        fetch( `${APIURL}/character/create` )
         .then( res => res.json() )
         .then( json => {
             const getJson = json.json;
