@@ -5,9 +5,9 @@ switch(window.location.hostname) {
     case 'localhost' || '127.0.0.1':
         APIURL = 'http://localhost:3000';
         break;
-        
-    case 'https://freya-alex-kinsey-client.herokuapp.com/':
-        APIURL = 'https://freya-alex-kinsey-server.herokuapp.com/'
+
+    case 'freya-alex-kinsey-client.herokuapp.com':
+        APIURL = 'freya-alex-kinsey-server.herokuapp.com'
         break;
 }
     // case 'characterclient.herokuapp.com':
